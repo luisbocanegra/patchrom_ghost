@@ -43,6 +43,8 @@ system/app/ExactCalculator 0 0 755 selabel=u:object_r:system_file:s0 capabilitie
 system/app/ExactCalculator/ExactCalculator.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Exchange2 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Exchange2/Exchange2.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/priv-app/FixSignal 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/priv-app/FixSignal/FixSignal.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Galaxy4 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Galaxy4/Galaxy4.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Gallery2 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
