@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/AppOpsService;
 
     .prologue
-    .line 354
+    .line 351
     iput-object p1, p0, Lcom/android/server/AppOpsService$4;->this$0:Lcom/android/server/AppOpsService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,17 +45,17 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 357
+    .line 354
     invoke-static {p1}, Landroid/os/Process;->isIsolated(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 358
+    .line 355
     return v2
 
-    .line 360
+    .line 357
     :cond_0
     iget-object v0, p0, Lcom/android/server/AppOpsService$4;->this$0:Lcom/android/server/AppOpsService;
 
@@ -67,10 +67,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 362
+    .line 359
     return v2
 
-    .line 364
+    .line 361
     :cond_1
     iget-object v0, p0, Lcom/android/server/AppOpsService$4;->this$0:Lcom/android/server/AppOpsService;
 
@@ -82,12 +82,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 366
+    .line 363
     const/4 v0, 0x2
 
     return v0
 
-    .line 368
+    .line 365
     :cond_2
     const/4 v0, 0x3
 
@@ -102,28 +102,28 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 373
+    .line 370
     invoke-virtual {p0, p1, p2}, Lcom/android/server/AppOpsService$4;->getMountMode(ILjava/lang/String;)I
 
     move-result v0
 
-    .line 374
+    .line 371
     .local v0, "mountMode":I
     const/4 v2, 0x2
 
     if-eq v0, v2, :cond_0
 
-    .line 375
+    .line 372
     const/4 v2, 0x3
 
     if-ne v0, v2, :cond_1
 
-    .line 374
+    .line 371
     :cond_0
     :goto_0
     return v1
 
-    .line 375
+    .line 372
     :cond_1
     const/4 v1, 0x0
 

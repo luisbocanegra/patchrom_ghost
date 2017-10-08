@@ -2711,7 +2711,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/ActivityManagerService;->mHandler:Lcom/android/server/am/ActivityManagerService$MainHandler;
 
-    invoke-direct {v0, v1, v2, p0}, Lcom/android/server/AppOpsService;-><init>(Ljava/io/File;Landroid/os/Handler;Lcom/android/server/am/ActivityManagerService;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/server/AppOpsService;-><init>(Ljava/io/File;Landroid/os/Handler;)V
 
     iput-object v0, p0, Lcom/android/server/am/ActivityManagerService;->mAppOpsService:Lcom/android/server/AppOpsService;
 

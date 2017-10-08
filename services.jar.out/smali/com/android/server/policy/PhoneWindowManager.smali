@@ -30261,7 +30261,7 @@
 .end method
 
 .method public updateBootProgress(ILandroid/content/pm/ApplicationInfo;II)V
-.locals 2
+    .locals 2
     .param p1, "stage"    # I
     .param p2, "optimizedApp"    # Landroid/content/pm/ApplicationInfo;
     .param p3, "currentAppPos"    # I

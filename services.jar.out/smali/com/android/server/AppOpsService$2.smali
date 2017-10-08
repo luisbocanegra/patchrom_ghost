@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/AppOpsService;
 
     .prologue
-    .line 134
+    .line 132
     iput-object p1, p0, Lcom/android/server/AppOpsService$2;->this$0:Lcom/android/server/AppOpsService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 137
+    .line 135
     iget-object v0, p0, Lcom/android/server/AppOpsService$2;->this$0:Lcom/android/server/AppOpsService;
 
     iget-object v0, v0, Lcom/android/server/AppOpsService;->mContext:Landroid/content/Context;
@@ -52,12 +52,12 @@
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 138
+    .line 136
     sget-object v2, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 
-    .line 137
+    .line 135
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 136
+    .line 134
     return-void
 .end method

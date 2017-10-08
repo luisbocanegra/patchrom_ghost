@@ -38,13 +38,13 @@
     .param p1, "uid"    # I
 
     .prologue
-    .line 149
+    .line 147
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 150
+    .line 148
     iput p1, p0, Lcom/android/server/AppOpsService$UidState;->uid:I
 
-    .line 149
+    .line 147
     return-void
 .end method
 
@@ -56,13 +56,13 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 154
+    .line 152
     iput-object v0, p0, Lcom/android/server/AppOpsService$UidState;->pkgOps:Landroid/util/ArrayMap;
 
-    .line 155
+    .line 153
     iput-object v0, p0, Lcom/android/server/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
-    .line 153
+    .line 151
     return-void
 .end method
 
@@ -74,7 +74,7 @@
 
     const/4 v0, 0x0
 
-    .line 159
+    .line 157
     iget-object v2, p0, Lcom/android/server/AppOpsService$UidState;->pkgOps:Landroid/util/ArrayMap;
 
     if-eqz v2, :cond_0
@@ -87,7 +87,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 160
+    .line 158
     :cond_0
     iget-object v2, p0, Lcom/android/server/AppOpsService$UidState;->opModes:Landroid/util/SparseIntArray;
 
@@ -104,7 +104,7 @@
     :cond_1
     move v0, v1
 
-    .line 159
+    .line 157
     :cond_2
     return v0
 .end method
