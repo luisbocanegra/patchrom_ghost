@@ -19,7 +19,7 @@ local-modified-jars := org.cyanogenmod.platform
 # All apks from MIUI
 local-miui-removed-apps := BugReport GameCenter FM Mipay MiuiCompass XiaomiVip MiGameCenterSDKService MiLivetalk MiuiVoip SogouInput SystemAdSolution VoiceAssist XMPass YellowPage
 
-local-miui-modified-apps := InCallUI TeleService SecurityCenter
+local-miui-modified-apps := InCallUI TeleService
 
 # Config density for co-developers to use the aaps with HDPI or XHDPI resource,
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch
@@ -53,4 +53,7 @@ include $(PORT_BUILD)/porting.mk
 #updater := $(ZIP_DIR)/META-INF/com/google/android/updater-script
 #pre_install_data_packages := $(TMP_DIR)/pre_install_apk_pkgname.txt
 local-pre-zip-misc:
+
+local-put-to-phone:
 	$(hide) cp -rf other/system $(ZIP_DIR)/
+	@echo copying files!
