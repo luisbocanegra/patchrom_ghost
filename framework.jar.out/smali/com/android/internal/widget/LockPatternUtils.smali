@@ -1069,7 +1069,7 @@
     return-object v1
 .end method
 
-.method public static patternToString(Ljava/util/List;B)Ljava/lang/String
+.method public static patternToString(Ljava/util/List;B)Ljava/lang/String;
     .locals 6
     .param p1, "gridSize"    # B
     .annotation system Ldalvik/annotation/Signature;
