@@ -1,0 +1,38 @@
+{
+  "localId": "classical_clock",
+  "onlineId": null,
+  "productId": null,
+  "downloadPath": "/system/media/theme/gadget/classical_clock.mtz",
+  "metaPath": "/system/media/theme/.data/meta/clock_2x4/classical_clock.mrm",
+  "contentPath": "/system/media/theme/.data/content/clock_2x4/classical_clock.mrc",
+  "hash": "F795ED21190D5DC196F599484ED14680090F3D7F",
+  "size": 953852,
+  "updatedTime": 0,
+  "platform": 2,
+  "title": "Clock Weather ZT",
+  "description": null,
+  "author": "ztolya",
+  "designer": "ztolya",
+  "version": "1.0",
+  "downloadCount": null,
+  "buildInThumbnails": [
+    "/system/media/theme/.data/preview/clock_2x4/classical_clock/preview_clock_0.jpg"
+  ],
+  "buildInPreviews": [
+    "/system/media/theme/.data/preview/clock_2x4/classical_clock/preview_clock_0.jpg"
+  ],
+  "titles": {
+    "en_US": "Classical",
+    "es_ES": "Classical clock",
+    "ru_RU": "Классические",
+    "be_BY": "Класічныя",
+    "uk_UA": "Класичні",
+    "zh_CN": "经典时钟",
+    "zh_TW": "經典時鐘"
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [],
+  "extraMeta": {}
+}
