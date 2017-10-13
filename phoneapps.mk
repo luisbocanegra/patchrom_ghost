@@ -5,6 +5,7 @@ private-phone-apps := \
 	BasicDreams \
 	Bluetooth \
 	BluetoothExt \
+	BluetoothMidiService \
 	CertInstaller \
 	com.qualcomm.location \
 	com.qualcomm.services.location \
@@ -33,7 +34,9 @@ private-phone-priv-apps := \
 	FusedLocation \
 	InputDevices \
 	OneTimeInitializer \
+	ProximityCalibrate \
 	ProxyHandler \
+	Screencast \
 	SharedStorageBackup \
 	Shell \
 	StatementService 

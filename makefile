@@ -17,7 +17,7 @@ local-modified-apps :=
 local-modified-jars := org.cyanogenmod.platform
 
 # All apks from MIUI
-local-miui-removed-apps := BugReport GameCenter FM Mipay MiuiCompass XiaomiVip MiGameCenterSDKService MiLivetalk MiuiVoip SogouInput SystemAdSolution VoiceAssist XMPass YellowPage
+local-miui-removed-apps := BugReport GameCenter Mipay XiaomiVip MiGameCenterSDKService MiLivetalk MiuiVoip SogouInput SystemAdSolution VoiceAssist XMPass YellowPage
 
 local-miui-modified-apps := InCallUI TeleService SecurityCenter
 
@@ -60,6 +60,7 @@ local-pre-zip-misc:
 	$(hide) rm -rf $(ZIP_DIR)/system/bin/app_process32_vendor
 	$(hide) cp -rf stockrom/system/bin/app_process32 $(ZIP_DIR)/system/bin/app_process32
 	@echo remove unnecessary files!
+	$(hide) rm -rf $(ZIP_DIR)/system/bin/app_process64_vendor
 	$(hide) rm -rf $(ZIP_DIR)/system/etc/CHANGELOG-CM.txt
 	$(hide) rm -rf $(ZIP_DIR)/system/recovery-from-boot.bak
 	$(hide) rm -rf $(ZIP_DIR)/system/media/audio/*
