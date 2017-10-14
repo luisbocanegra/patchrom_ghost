@@ -11,6 +11,8 @@ private-phone-apps := \
 	com.qualcomm.services.location \
 	KeyChain \
 	LatinIME \
+    FM2 \
+	NfcNci \
 	LiveWallpapers \
 	PacProcessor \
 	PicoTts \
@@ -39,4 +41,6 @@ private-phone-priv-apps := \
 	Screencast \
 	SharedStorageBackup \
 	Shell \
-	StatementService 
+	Snap \
+	StatementService \
+    Tag

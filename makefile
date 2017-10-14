@@ -25,7 +25,7 @@ local-miui-modified-apps := InCallUI TeleService SecurityCenter
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch
 local-density := XHDPI
 
-PORT_PRODUCT := ghost
+PORT_PRODUCT := ghost_global
 
 # All apps need to be removed from original ZIP file
 local-remove-apps   := 
