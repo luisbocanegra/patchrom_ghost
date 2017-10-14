@@ -12,6 +12,8 @@ private-phone-apps := \
 	KeyChain \
 	LatinIME \
     NfcNci \
+    FM2 \
+	NfcNci 
 	LiveWallpapers \
 	PacProcessor \
 	PicoTts \
