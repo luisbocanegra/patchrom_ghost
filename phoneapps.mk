@@ -11,8 +11,7 @@ private-phone-apps := \
 	com.qualcomm.services.location \
 	KeyChain \
 	LatinIME \
-    FM2 \
-	NfcNci \
+    NfcNci \
 	LiveWallpapers \
 	PacProcessor \
 	PicoTts \
