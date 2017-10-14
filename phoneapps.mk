@@ -13,7 +13,7 @@ private-phone-apps := \
 	LatinIME \
     NfcNci \
     FM2 \
-	NfcNci 
+	NfcNci \
 	LiveWallpapers \
 	PacProcessor \
 	PicoTts \
