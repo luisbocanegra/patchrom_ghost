@@ -9,11 +9,10 @@ private-phone-apps := \
 	CertInstaller \
 	com.qualcomm.location \
 	com.qualcomm.services.location \
+    FM2 \
 	KeyChain \
 	LatinIME \
     NfcNci \
-    FM2 \
-	NfcNci \
 	LiveWallpapers \
 	PacProcessor \
 	PicoTts \
