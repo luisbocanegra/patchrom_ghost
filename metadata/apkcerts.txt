@@ -105,4 +105,3 @@ name="GoogleContactsSync.apk" certificate="PRESIGNED" private_key=""
 name="GooglePlayServices.apk" certificate="PRESIGNED" private_key=""
 name="GooglePlayStore.apk" certificate="PRESIGNED" private_key=""
 name="GoogleServicesFramework.apk" certificate="PRESIGNED" private_key=""
-
