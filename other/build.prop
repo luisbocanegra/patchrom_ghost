@@ -9,9 +9,8 @@ ro.xiaomi.developerid=luisbocanegra
 ro.product.locale.language=en
 ro.product.locale.region=MX
 drm.service.enabled=1
-persist.sys.mcd_config_file=/system/etc/mcd_default.conf
-persist.sys.miui_feature_config=/system/etc/miui_feature/lite.conf
-ro.miui.has_real_blur=0
+
+
 ro.setupwizard.mode=OPTIONAL
 qdoc.mode=1
 persist.audio.dirac.speaker=true
@@ -38,8 +37,6 @@ ro.config.sms_received_sound=FadeIn.ogg
 ro.config.sms_delivered_sound=MessageComplete.ogg
 persist.sys.strictmode.disable=true
 ro.product.mod_device=crackling_global
-
-# luisbocanegra additions for ghost
 
 # Set single SIM mode
 persist.radio.multisim.config=single
@@ -72,9 +69,6 @@ ro.config.low_ram=false
 
 # Hide ADB icon in status bar
 persist.adb.notify=1
-
-# Disable scrolling cache
-persist.sys.scrollingcache=3
 
 # Improve scroll smoothness
 ro.max.fling_velocity=12000

@@ -42,6 +42,14 @@ if [ $1 = "InCallUI" ];then
     $XMLMERGYTOOL $1/res/values $2/res/values
 fi
 
+if [ $1 = "MiuiSystemUI" ];then
+    $XMLMERGYTOOL $1/res/values $2/res/values
+fi
+
+if [ $1 = "Provision" ];then
+    applyPatch $1 $2
+fi
+
 if [ $1 = "TeleService" ];then
     applyPatch $1 $2
 fi
@@ -50,3 +58,12 @@ if [ $1 = "SecurityCenter" ];then
     applyPatch $1 $2
 	sed -i '/- 16/a\sdkInfo:\n  minSdkVersion: '\''23'\''\n  targetSdkVersion: '\''23'\''' $2/apktool.yml
 fi
+
+if [ $1 = "miuisystem" ];then
+    cp $1/crackling.xml $2/assets/device_features/
+fi
+
+if [ $1 = "Settings" ];then
+    cp -r -f $1 $2
+fi
+

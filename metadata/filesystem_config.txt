@@ -1140,6 +1140,7 @@ system/lib/libAlAisWrap.so 0 0 644 selabel=u:object_r:system_file:s0 capabilitie
 system/lib/libDivxDrm.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libEGL.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libETC1.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/lib/libfmjni.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libFFTEm.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libGLES_trace.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libGLESv1_CM.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
