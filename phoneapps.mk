@@ -9,7 +9,6 @@ private-phone-apps := \
 	CertInstaller \
 	com.qualcomm.location \
 	com.qualcomm.services.location \
-    FM2 \
 	KeyChain \
 	LatinIME \
     NfcNci \
@@ -32,7 +31,6 @@ private-phone-priv-apps := \
 	CMAudioService \
 	CMSettingsProvider \
 	ExternalStorageProvider \
-	FMRadio \
 	FusedLocation \
 	InputDevices \
 	OneTimeInitializer \
