@@ -56,29 +56,6 @@ local-pre-zip-misc:
 	$(TOOLS_DIR)/post_process_props.py out/ZIP/system/build.prop other/build.prop
 	@echo copying files!
 	$(hide) cp -rf other/system/ $(ZIP_DIR)/
-	echo "ui_print("Installing GApps");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "run_program("/sbin/busybox", "umount", "/system");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "ui_print("Mounting system");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "run_program("/sbin/busybox", "mount", "/system");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "ui_print("Removing file conflicts and cleaning up");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "delete_recursive("/system/app/BrowserProviderProxy","/system/app/PartnerBookmarksProvider","/system/app/Provision","/system/app/QuickSearchBox","/system/app/Vending");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "delete("/system/app/BrowserProviderProxy.apk","/system/app/PartnerBookmarksProvider.apk","/system/app/Provision.apk","/system/app/QuickSearchBox.apk","/system/app/Vending.apk");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "delete_recursive("/system/priv-app/BrowserProviderProxy","/system/priv-app/PartnerBookmarksProvider","/system/priv-app/Provision","/system/priv-app/QuickSearchBox","/system/priv-app/Vending");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "delete("/system/priv-app/BrowserProviderProxy.apk","/system/priv-app/PartnerBookmarksProvider.apk","/system/priv-app/Provision.apk","/system/priv-app/QuickSearchBox.apk","/system/priv-app/Vending.apk");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "ui_print("Copying files");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "package_extract_dir("system", "/system");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "ui_print("Cleaning up and setting metadata");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "set_metadata_recursive("/system/addon.d", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "set_metadata_recursive("/system/app", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "set_metadata_recursive("/system/etc/permissions", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "set_metadata_recursive("/system/etc/preferred-apps", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "set_metadata_recursive("/system/framework", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "set_metadata_recursive("/system/lib", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "set_metadata_recursive("/system/priv-app", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "set_metadata_recursive("/system/usr/srec/en-US", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "ui_print("Unmounting system");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "run_program("/sbin/busybox", "umount", "/system");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
-	echo "ui_print("GApps Installation complete");" >> $(ZIP_DIR)/META-INF/com/google/android/updater-script
 	@echo goodbye! miui prebuilt binaries!
 	$(hide) rm -rf $(ZIP_DIR)/system/bin/app_process32_vendor
 	$(hide) cp -rf stockrom/system/bin/app_process32 $(ZIP_DIR)/system/bin/app_process32
