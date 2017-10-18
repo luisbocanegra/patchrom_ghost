@@ -60,7 +60,7 @@ if [ $1 = "SecurityCenter" ];then
 fi
 
 if [ $1 = "miuisystem" ];then
-    cp $1/crackling.xml $2/assets/device_features/
+    cp $1/ghost.xml $2/assets/device_features/
 fi
 
 if [ $1 = "Settings" ];then
