@@ -783,3 +783,4 @@ service logcatd /system/bin/logcat -b all -v threadtime -v usec -v printable -D 
     user logd
     group log
     writepid /dev/cpuset/system-background/tasks
+
