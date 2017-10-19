@@ -69,11 +69,11 @@
     <bool name="config_suspendWhenScreenOffDueToProximity">false</bool>
     <bool name="config_batterySdCardAccessibility">false</bool>
     <bool name="config_use_strict_phone_number_comparation">false</bool>
-    <bool name="config_intrusiveNotificationLed">true</bool>
-    <bool name="config_multiColorNotificationLed">true</bool>
-    <bool name="config_intrusiveBatteryLed">true</bool>
+    <bool name="config_intrusiveNotificationLed">false</bool>
+    <bool name="config_multiColorNotificationLed">false</bool>
+    <bool name="config_intrusiveBatteryLed">false</bool>
     <bool name="config_multiColorBatteryLed">false</bool>
-    <bool name="config_ledCanPulse">true</bool>
+    <bool name="config_ledCanPulse">false</bool>
     <bool name="config_disableMenuKeyInLockScreen">false</bool>
     <bool name="config_enableLockBeforeUnlockScreen">false</bool>
     <bool name="config_enableLockScreenRotation">false</bool>
@@ -83,7 +83,7 @@
     <bool name="config_enable_puk_unlock_screen">true</bool>
     <bool name="config_enable_emergency_call_while_sim_locked">true</bool>
     <bool name="config_singleStageCameraKey">false</bool>
-    <bool name="config_allowAutoBrightnessWhileDozing">false</bool>
+    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
     <bool name="config_autoBrightnessResetAmbientLuxAfterWarmUp">true</bool>
     <bool name="config_deviceHasVariableButtonBrightness">false</bool>
     <bool name="config_swipeDisambiguation">true</bool>
@@ -118,12 +118,12 @@
     <bool name="config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="config_wimaxEnabled">false</bool>
     <bool name="config_dreamsSupported">true</bool>
-    <bool name="config_dreamsEnabledByDefault">true</bool>
+    <bool name="config_dreamsEnabledByDefault">false</bool>
     <bool name="config_dreamsActivatedOnDockByDefault">true</bool>
     <bool name="config_dreamsActivatedOnSleepByDefault">false</bool>
     <bool name="config_dreamsEnabledOnBattery">false</bool>
     <bool name="config_dozeAfterScreenOff">true</bool>
-    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">false</bool>
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
     <bool name="config_cellBroadcastAppLinks">true</bool>
     <bool name="config_syncstorageengine_masterSyncAutomatically">true</bool>
@@ -175,7 +175,7 @@
     <bool name="config_enableBurnInProtection">false</bool>
     <bool name="config_fingerprintRestrictedToSystemAndOwner">false</bool>
     <bool name="config_allowAnimationsInLowPowerMode">false</bool>
-    <bool name="config_supportDoubleTapWake">true</bool>
+    <bool name="config_supportDoubleTapWake">false</bool>
     <item type="bool" name="config_mainBuiltInDisplayIsRound">@bool/config_windowIsRound</item>
     <bool name="config_supportMicNearUltrasound">true</bool>
     <bool name="config_supportSpeakerNearUltrasound">true</bool>
@@ -190,7 +190,7 @@
     <bool name="config_stylusGestures">false</bool>
     <bool name="config_cameraDoubleTapPowerGestureEnabled">true</bool>
     <bool name="config_ui_blur_enabled">false</bool>
-    <bool name="config_showBatteryFullyChargedNotification">false</bool>
+    <bool name="config_showBatteryFullyChargedNotification">true</bool>
     <bool name="config_useSystemClockforRotationSensor">true</bool>
     <bool name="config_persistUsbDriveNotification">true</bool>
     <bool name="config_zero_balance_operator">false</bool>
