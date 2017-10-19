@@ -42,21 +42,12 @@ if [ $1 = "InCallUI" ];then
     $XMLMERGYTOOL $1/res/values $2/res/values
 fi
 
-if [ $1 = "MiuiSystemUI" ];then
-    $XMLMERGYTOOL $1/res/values $2/res/values
-fi
-
 if [ $1 = "Provision" ];then
     applyPatch $1 $2
 fi
 
 if [ $1 = "TeleService" ];then
     applyPatch $1 $2
-fi
-
-if [ $1 = "SecurityCenter" ];then
-    applyPatch $1 $2
-	sed -i '/- 16/a\sdkInfo:\n  minSdkVersion: '\''23'\''\n  targetSdkVersion: '\''23'\''' $2/apktool.yml
 fi
 
 if [ $1 = "miuisystem" ];then
@@ -67,3 +58,8 @@ if [ $1 = "Settings" ];then
     cp -r -f $1 $2
 fi
 
+if [ $1 = "SecurityCenter" ];then
+    applyPatch $1 $2
+	#Fix MIUI SecurityCenter icon dislocation
+	sed -i -e 's/sdkInfo: null/sdkInfo:/' -e '/sdkInfo:/a\  minSdkVersion: '\''23'\''\n  targetSdkVersion: '\''23'\''' $2/apktool.yml
+fi
