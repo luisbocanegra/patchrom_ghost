@@ -1,17 +1,13 @@
 #!/system/bin/sh
 # delete some files if present in /data/data/com.android.providers.telephony/databases/
 
-$L "    _    ____  _   _    _____ ___ __  __"
-$L "   / \  |  _ \| \ | |  |  ___|_ _|\ \/ /"
-$L "  / _ \ | |_) |  \| |  | |_   | |  \  / "
-$L " / ___ \|  __/| |\  |  |  _|  | |  /  \ "
-$L "/_/   \_|_|   |_| \_|  |_|   |___|/_/\_\"
-$L ""
-$L ""
+$L "    _    ____  _   _    _____ ___ __  __ "
+$L "   / \  |  _ \| \ | |  |  ___|_ _|\ \/ / "
+$L "  / _ \ | |_) |  \| |  | |_   | |  \  /  "
+$L " / ___ \|  __/| |\  |  |  _|  | |  /  \  "
+$L "/_/   \_|_|   |_| \_|  |_|   |___|/_/\_\ "
+$L "                                         "
 
-if [ -e /data/data/com.android.providers.telephony/databases/ ];
-then
-   delete("/data/data/com.android.providers.telephony/databases/telephony.db");
-   delete("/data/data/com.android.providers.telephony/databases/telephony.db-journal");
-$L "###################APN FILES REMOVED##################"
-fi;
+busybox rm -f /data/data/com.android.providers.telephony/databases/telephony.db 2>/dev/null
+busybox rm -f /data/data/com.android.providers.telephony/databases/telephony.db-journal
+$L " ###################FILES REMOVED################## "
