@@ -59,6 +59,8 @@ local-pre-zip-misc:
 	@echo goodbye! miui prebuilt binaries!
 	$(hide) rm -rf $(ZIP_DIR)/system/bin/app_process32_vendor
 	$(hide) cp -rf stockrom/system/bin/app_process32 $(ZIP_DIR)/system/bin/app_process32
+	@echo remove unnecessary libs!
+	$(hide) rm -rf $(ZIP_DIR)/system/lib64
 	@echo remove unnecessary files!
 	$(hide) rm -rf $(ZIP_DIR)/system/bin/app_process64_vendor
 	$(hide) rm -rf $(ZIP_DIR)/system/etc/CHANGELOG-CM.txt
