@@ -15,7 +15,6 @@ ro.setupwizard.mode=OPTIONAL
 qdoc.mode=1
 persist.audio.dirac.speaker=true
 wifi.supplicant_scan_interval=180
-power.saving.mode=0
 pm.sleep_mode=1
 ro.ril.disable.power.collapse=0
 ro.vold.umsdirtyratio=20
