@@ -1,5 +1,4 @@
 #!/system/bin/sh
-# delete some files if present in /data/data/com.android.providers.telephony/databases/
 
 $L "    _    ____  _   _    _____ ___ __  __ "
 $L "   / \  |  _ \| \ | |  |  ___|_ _|\ \/ / "
@@ -8,6 +7,3 @@ $L " / ___ \|  __/| |\  |  |  _|  | |  /  \  "
 $L "/_/   \_|_|   |_| \_|  |_|   |___|/_/\_\ "
 $L "                                         "
 
-busybox rm -f /data/data/com.android.providers.telephony/databases/telephony.db 2>/dev/null
-busybox rm -f /data/data/com.android.providers.telephony/databases/telephony.db-journal
-$L " ###################FILES REMOVED################## "

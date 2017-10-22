@@ -13,7 +13,6 @@ import /init.trace.rc
 import /init.miui.rc
 # Include CM's extra init file
 import /init.cm.rc
-import /init.ril.rc
 
 on early-init
     # Set init and its forked children's oom_adj.
@@ -659,6 +658,7 @@ service ril-daemon /system/bin/rild
     socket rild stream 660 root radio
     socket sap_uim_socket1 stream 660 bluetooth bluetooth
     socket rild-debug stream 660 radio system
+    socket rild-cas stream 660 casdrm
     user root
     group radio cache inet misc audio log qcom_diag
 
@@ -787,14 +787,4 @@ service logcatd /system/bin/logcat -b all -v threadtime -v usec -v printable -D 
     user logd
     group log
     writepid /dev/cpuset/system-background/tasks
-
-# Enable init.d support
-service sysinit /system/bin/logwrapper /system/xbin/busybox run-parts /system/etc/init.d
-	class late_start
-	user root
-	disabled
-	oneshot
-    
-on property:sys.boot_completed=1
-	start sysinit
 

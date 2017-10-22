@@ -53,6 +53,7 @@ service mcd_service /system/bin/mcd
 
 on property:sys.boot_completed=1
     start mcd_service
+    restart ril-daemon
 
 service mdb_svc  /system/xbin/mdb_svc
     class late_start

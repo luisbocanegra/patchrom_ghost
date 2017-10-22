@@ -11,7 +11,7 @@
     <!--whether install the fm app-->
     <bool name="support_fm">false</bool>
     <!--whether the device supports oldman mode-->
-    <bool name="support_oldman_mode">true</bool>
+    <bool name="support_oldman_mode">false</bool>
     <!--whether the device is dual sim card-->
     <bool name="support_dual_sim_card">false</bool>
     <!--whether the device has dual systems-->
@@ -131,7 +131,7 @@
     <!--whether set orientation info for face detection in camera-->
     <bool name="is_camera_face_detection_need_orientation">false</bool>
     <!--whether hold blured background for effects preview in camera-->
-    <bool name="is_camera_hold_blur_background">true</bool>
+    <bool name="is_camera_hold_blur_background">false</bool>
     <!--whether support peaking mf in camera-->
     <bool name="support_camera_peaking_mf">true</bool>
     <!--whether support gradienter in camera-->
